@@ -1,0 +1,81 @@
+/* Cart  */
+.cart > .container{
+    gap: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.cart .product-table .table .trow{
+    align-items: center;
+    padding: 20px 0 ;
+    display: grid;
+    grid-template-columns: 125px 180px 125px 125px 125px 50px;
+}
+.cart .product-table .table .trow.thead{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cart .product-table .table .trow .p-image img{
+    height: 70px;
+    width: auto;
+}
+
+.cart .product-table .table .trow .p-qty input{
+    width: 70px;
+    height: 45px;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.cart .product-table .coupon{
+    margin: 40px 0;
+}
+
+.cart .product-table .coupon h3{
+    padding: 15px 0;
+}
+.cart .product-table .coupon input{
+    height: 44px;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+.cart .order-summery{
+    box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 10%);
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+    color: #4A4A4A;
+    font-size: 16px;
+}
+.cart .order-summery .order-summery-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+    .cart > .container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    .cart > .container{
+        flex-direction: column;
+    }
+    .cart .product-table .table .trow{
+        grid-template-columns: repeat(6, auto)
+    }
+    .cart .product-table .table .trow *{
+        font-size: 10px;
+    }
+    .cart .product-table .table .trow .p-qty input{
+        width: 35px;
+        height: 29px;
+        font-size: 14px;
+        padding: 5px;
+    
+    }
+}
